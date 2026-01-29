@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNB Solar Panels Cleaning Services | Karachi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a6dcc;
+            --secondary: #ff9900;
+            --accent: #10b981;
+            --whatsapp: #25d366;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --radius: 8px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            color: var(--secondary);
+            font-size: 2rem;
+        }
+        
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .logo-tagline {
+            font-size: 0.8rem;
+            color: var(--gray);
+            font-weight: 500;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 180px 20px 100px;
+            margin-top: 70px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            border-radius: var(--radius);
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #1557a7;
+            transform: translateY(-3px);
+        }
+        
+        .btn-secondary {
+            background-color: var(--accent);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #0da271;
+            transform: translateY(-3px);
+        }
+        
+        .btn-whatsapp {
+            background-color: var(--whatsapp);
+            color: white;
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #1da851;
+            transform: translateY(-3px);
+        }
+        
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+            z-index: 999;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+        }
+        
+        .whatsapp-text {
+            position: absolute;
+            right: 70px;
+            background-color: var(--whatsapp);
+            color: white;
+            padding: 8px 15px;
+            border-radius: var(--radius);
+            font-weight: 600;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+        
+        .whatsapp-float:hover .whatsapp-text {
+            opacity: 1;
+        }
+        
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Pricing Section */
+        .pricing-card {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 40px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .price {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 20px 0;
+        }
+        
+        .price-unit {
+            font-size: 1.5rem;
+            color: var(--gray);
+        }
+        
+        .offer-badge {
+            background-color: var(--accent);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        
+        /* Packages Section */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .package-card {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .package-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .package-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .package-features {
+            list-style: none;
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .package-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .package-features li:before {
+            content: "✓";
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        /* Before & After */
+        .comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .comparison-item {
+            text-align: center;
+        }
+        
+        .comparison-image {
+            width: 100%;
+            height: 300px;
+            border-radius: var(--radius);
+            object-fit: cover;
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+        
+        .image-label {
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: var(--radius);
+            display: inline-block;
+        }
+        
+        .before-label {
+            background-color: #fecaca;
+            color: #991b1b;
+        }
+        
+        .after-label {
+            background-color: #bbf7d0;
+            color: #166534;
+        }
+        
+        /* Benefits Section */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-card {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .benefit-card:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .benefit-card:hover .benefit-icon {
+            color: white;
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        /* Services Section */
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .service-type, .solution-type {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+        }
+        
+        .service-list, .solution-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .service-list li, .solution-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .service-list li:before, .solution-list li:before {
+            content: "•";
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        /* Tools Section */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .tool-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .tool-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        /* Why Choose Us */
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .reason-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .reason-icon {
+            color: var(--accent);
+            font-size: 1.5rem;
+            min-width: 30px;
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            background-color: var(--primary);
+            color: white;
+            border-radius: var(--radius);
+            padding: 50px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        
+        .contact-phone {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 20px 0;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .contact-phone:hover {
+            color: var(--secondary);
+        }
+        
+        .coverage-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+        
+        /* Contact Form */
+        .contact-form-container {
+            background-color: white;
+            border-radius: var(--radius);
+            padding: 40px;
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        .footer-contact {
+            font-size: 1.1rem;
+            margin-top: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+        
+        .social-link:hover {
+            background-color: var(--whatsapp);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .price {
+                font-size: 3rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: var(--shadow);
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .hero {
+                padding: 150px 20px 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+            
+            .contact-phone {
+                font-size: 1.8rem;
+            }
+            
+            .contact-options {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .contact-container {
+                padding: 30px 20px;
+            }
+            
+            .contact-form-container {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-solar-panel"></i>
+                </div>
+                <div>
+                    <div class="logo-text">FNB Solar Cleaning</div>
+                    <div class="logo-tagline">Power Your Panels. Clean Your Future.</div>
+                </div>
+            </div>
+            
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-form">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/923003732537?text=Hello%20FNB%20Solar%20Cleaning!%20I%20would%20like%20to%20inquire%20about%20your%20solar%20panel%20cleaning%20services." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <div class="whatsapp-text">Message us on WhatsApp</div>
+    </a>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-badge">20% OFF – Residential New Customers</div>
+            <h1>Solar Panels Cleaning Services in Karachi</h1>
+            <p>Boost your solar efficiency and save on your electric bill with our professional, eco-friendly cleaning solutions.</p>
+            <div class="cta-buttons">
+                <a href="#contact-form" class="btn btn-primary">Book a Cleaning</a>
+                <a href="tel:0300-3732537" class="btn btn-secondary">Call Now: 0300-3732537</a>
+                <a href="https://wa.me/923003732537?text=Hello%20FNB%20Solar%20Cleaning!%20I%20would%20like%20to%20inquire%20about%20your%20solar%20panel%20cleaning%20services." class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Affordable Pricing</h2>
+                <p>Transparent pricing with no hidden costs. We offer the best value for professional solar panel cleaning in Karachi.</p>
+            </div>
+            
+            <div class="pricing-card">
+                <h3>Per Panel Cleaning Price</h3>
+                <div class="price">PKR 100 <span class="price-unit">/- per panel</span></div>
+                <p>Minimum 10 panels for residential services</p>
+                <div class="offer-badge">20% OFF for new residential customers</div>
+                <a href="#contact-form" class="btn btn-primary" style="margin-top: 30px;">Get Your Discount</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Packages Section -->
+    <section id="packages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Cleaning Packages</h2>
+                <p>Choose from our flexible cleaning packages designed to meet different needs and budgets.</p>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <h3>15 Days Cleaning Plan</h3>
+                    <p>Ideal for areas with moderate dust accumulation</p>
+                    <ul class="package-features">
+                        <li>Bi-weekly cleaning schedule</li>
+                        <li>Dust and light debris removal</li>
+                        <li>Performance check report</li>
+                        <li>10% discount on next service</li>
+                    </ul>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>30 Days Cleaning Plan</h3>
+                    <p>Most popular for residential properties</p>
+                    <ul class="package-features">
+                        <li>Monthly cleaning schedule</li>
+                        <li>Complete dust and debris removal</li>
+                        <li>Bird dropping cleaning</li>
+                        <li>15% discount on next service</li>
+                    </ul>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Deep Cleaning Service</h3>
+                    <p>For heavily soiled or neglected panels</p>
+                    <ul class="package-features">
+                        <li>Specialized cleaning solutions</li>
+                        <li>Stubborn stain removal</li>
+                        <li>Panel efficiency test</li>
+                        <li>Protective coating application</li>
+                    </ul>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Super Cleaning Service</h3>
+                    <p>Our premium service with added benefits</p>
+                    <ul class="package-features">
+                        <li>Everything in Deep Cleaning</li>
+                        <li>Anti-static treatment</li>
+                        <li>Water spot prevention</li>
+                        <li>6-month maintenance guarantee</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Before & After Section -->
+    <section id="comparison">
+        <div class="container">
+            <div class="section-title">
+                <h2>See the Difference</h2>
+                <p>Experience the visible and performance-boosting difference between dirty and professionally cleaned solar panels.</p>
+            </div>
+            
+            <div class="comparison">
+                <div class="comparison-item">
+                    <div class="image-label before-label">Before Cleaning</div>
+                    <img src="https://images.unsplash.com/photo-1622653530304-0b6e2a1e7c1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Dirty solar panels" class="comparison-image">
+                    <p>Dirty panels can reduce efficiency by up to 25%</p>
+                </div>
+                
+                <div class="comparison-item">
+                    <div class="image-label after-label">After Cleaning</div>
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Clean solar panels" class="comparison-image">
+                    <p>Clean panels restore maximum energy production</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Benefits Section -->
+    <section id="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Benefits of Solar Cleaning</h2>
+                <p>Regular cleaning of your solar panels provides multiple advantages beyond just looking clean.</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Save on Electric Bill</h3>
+                    <p>Clean panels can increase efficiency by up to 25%, reducing your electricity costs significantly.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly Methods</h3>
+                    <p>We use biodegradable cleaning solutions that are safe for the environment and your panels.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Low Maintenance</h3>
+                    <p>Regular cleaning prevents long-term damage, reducing the need for costly repairs or replacements.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Improved Efficiency</h3>
+                    <p>Remove dust, mud, and debris that block sunlight and reduce your system's energy output.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-calendar-plus"></i>
+                    </div>
+                    <h3>Extended Panel Life</h3>
+                    <p>Prevent corrosion and micro-cracks caused by accumulated dirt and bird droppings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive cleaning solutions for all types of solar installations across Karachi.</p>
+            </div>
+            
+            <div class="services-container">
+                <div class="service-type">
+                    <h3>We Provide Cleaning Services For:</h3>
+                    <ul class="service-list">
+                        <li>Houses & Residential Homes</li>
+                        <li>Apartment Buildings & Societies</li>
+                        <li>Factories & Industrial Units</li>
+                        <li>Commercial Areas & Offices</li>
+                        <li>Shopping Malls & Plazas</li>
+                        <li>Schools & Educational Institutions</li>
+                        <li>Hospitals & Healthcare Facilities</li>
+                        <li>Government Buildings</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-type">
+                    <h3>Cleaning Solutions Include:</h3>
+                    <ul class="solution-list">
+                        <li>Dust & Sand Removal</li>
+                        <li>Mud & Dirt Cleaning</li>
+                        <li>Bird Droppings Removal</li>
+                        <li>Energy Efficiency Improvement</li>
+                        <li>Pollution Film Removal</li>
+                        <li>Hard Water Stain Treatment</li>
+                        <li>Algae & Fungus Removal</li>
+                        <li>Post-Monsoon Deep Cleaning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tools & Equipment Section -->
+    <section id="tools">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional Equipment</h2>
+                <p>We use professional-grade tools and equipment to ensure safe and effective cleaning.</p>
+            </div>
+            
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <div class="tool-icon">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h3>High-Pressure Systems</h3>
+                    <p>Adjustable pressure washers for effective yet gentle cleaning</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Soft-Brush Cleaners</h3>
+                    <p>Specialized brushes that won't scratch panel surfaces</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Eco-Friendly Solutions</h3>
+                    <p>Biodegradable cleaning agents safe for environment</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Water Filtration</h3>
+                    <p>Deionized water systems to prevent water spots</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Microfiber Cloths</h3>
+                    <p>Streak-free drying for crystal clear panels</p>
+                </div>
+                
+                <div class="tool-item">
+                    <div class="tool-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Efficiency Testers</h3>
+                    <p>Tools to measure before and after performance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us -->
+    <section id="why-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose FNB Solar Cleaning</h2>
+                <p>We stand out from the competition with our commitment to quality and customer satisfaction.</p>
+            </div>
+            
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div>
+                        <h3>Professional & Trained Staff</h3>
+                        <p>Our technicians are certified and trained in solar panel cleaning safety and techniques.</p>
+                    </div>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div>
+                        <h3>Affordable Pricing</h3>
+                        <p>We offer competitive pricing with no hidden charges and flexible payment options.</p>
+                    </div>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div>
+                        <h3>Eco-Friendly Methods</h3>
+                        <p>Our cleaning solutions are environmentally safe and water-conserving.</p>
+                    </div>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Reliable Service</h3>
+                        <p>We're trusted by hundreds of residential and commercial clients across Karachi.</p>
+                    </div>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div>
+                        <h3>Residential & Commercial Expertise</h3>
+                        <p>We have experience with all types of solar installations, from small homes to large factories.</p>
+                    </div>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h3>Timely Service</h3>
+                        <p>We value your time and ensure our services are completed within the promised timeframe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <h2>Contact Us Today</h2>
+                <p>Start saving on your electric bill with our professional cleaning services!</p>
+                
+                <div class="contact-options">
+                    <a href="tel:0300-3732537" class="btn btn-secondary">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                    <a href="https://wa.me/923003732537?text=Hello%20FNB%20Solar%20Cleaning!%20I%20would%20like%20to%20inquire%20about%20your%20solar%20panel%20cleaning%20services." class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </div>
+                
+                <a href="tel:0300-3732537" class="contact-phone">
+                    <i class="fas fa-phone-alt"></i> 0300-3732537
+                </a>
+                
+                <p>Our team is available 7 days a week from 8:00 AM to 8:00 PM</p>
+                
+                <div class="coverage-badge">
+                    <i class="fas fa-map-marker-alt"></i> Service Area: Karachi – Residential & Commercial
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section id="contact-form">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book Your Service</h2>
+                <p>Fill out the form below and we'll contact you within 24 hours to schedule your solar panel cleaning.</p>
+            </div>
+            
+            <div class="contact-form-container">
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="0300-XXXXXXX">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service-type">Service Type *</label>
+                            <select id="service-type" name="service-type" required>
+                                <option value="">Select a service</option>
+                                <option value="15-days">15 Days Cleaning Plan</option>
+                                <option value="30-days">30 Days Cleaning Plan</option>
+                                <option value="deep-cleaning">Deep Cleaning Service</option>
+                                <option value="super-cleaning">Super Cleaning Service</option>
+                                <option value="one-time">One-Time Cleaning</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="property-type">Property Type *</label>
+                            <select id="property-type" name="property-type" required>
+                                <option value="">Select property type</option>
+                                <option value="house">House / Residential Home</option>
+                                <option value="apartment">Apartment Building</option>
+                                <option value="factory">Factory / Industrial Unit</option>
+                                <option value="commercial">Commercial Area / Office</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="panels">Number of Solar Panels *</label>
+                            <input type="number" id="panels" name="panels" required min="1" placeholder="e.g., 12">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address *</label>
+                        <input type="text" id="address" name="address" required placeholder="Full address including area">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any specific requirements or questions..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-calendar-check"></i> Book My Solar Cleaning
+                        </button>
+                    </div>
+                    
+                    <p style="text-align: center; margin-top: 15px; color: var(--gray);">
+                        <i class="fas fa-info-circle"></i> You can also WhatsApp us directly at 
+                        <a href="https://wa.me/923003732537?text=Hello%20FNB%20Solar%20Cleaning!%20I%20would%20like%20to%20inquire%20about%20your%20solar%20panel%20cleaning%20services." style="color: var(--whatsapp); font-weight: 600;">0300-3732537</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">FNB Solar Panels Cleaning Services</div>
+                    <p>Professional Solar Panel Cleaning in Karachi. Power Your Panels. Clean Your Future.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/923003732537?text=Hello%20FNB%20Solar%20Cleaning!%20I%20would%20like%20to%20inquire%20about%20your%20solar%20panel%20cleaning%20services." class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:0300-3732537" class="social-link">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> 0300-3732537</p>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp: 0300-3732537</p>
+                        <p><i class="fas fa-clock"></i> 8:00 AM - 8:00 PM, 7 Days a Week</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Service Coverage</h3>
+                    <ul class="service-list">
+                        <li>Houses & Residential Buildings</li>
+                        <li>Factories & Industrial Units</li>
+                        <li>Commercial Areas & Offices</li>
+                        <li>All Areas of Karachi</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2026 FNB Solar Panels Cleaning Services. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile navigation toggle
+        document.getElementById('mobileToggle').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form submission simulation
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const serviceType = document.getElementById('service-type').value;
+            const propertyType = document.getElementById('property-type').value;
+            const panels = document.getElementById('panels').value;
+            
+            // Create WhatsApp message
+            const serviceNames = {
+                '15-days': '15 Days Cleaning Plan',
+                '30-days': '30 Days Cleaning Plan',
+                'deep-cleaning': 'Deep Cleaning Service',
+                'super-cleaning': 'Super Cleaning Service',
+                'one-time': 'One-Time Cleaning'
+            };
+            
+            const propertyNames = {
+                'house': 'House / Residential Home',
+                'apartment': 'Apartment Building',
+                'factory': 'Factory / Industrial Unit',
+                'commercial': 'Commercial Area / Office',
+                'other': 'Other'
+            };
+            
+            const message = `Hello FNB Solar Cleaning! I would like to book a service.
+
+Name: ${name}
+Phone: ${phone}
+Service Type: ${serviceNames[serviceType] || serviceType}
+Property Type: ${propertyNames[propertyType] || propertyType}
+Number of Panels: ${panels}
+
+I submitted this through your website. Please contact me to schedule an appointment.`;
+            
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Create WhatsApp URL
+            const whatsappUrl = `https://wa.me/923003732537?text=${encodedMessage}`;
+            
+            // Redirect to WhatsApp
+            window.open(whatsappUrl, '_blank');
+            
+            // Show confirmation
+            alert('Thank you for your booking request! You are being redirected to WhatsApp to complete your booking. Please send the pre-filled message to confirm your appointment.');
+        });
+        
+        // WhatsApp redirect for booking buttons
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            if (button.textContent.includes('Book') || button.textContent.includes('Discount')) {
+                button.addEventListener('click', function(e) {
+                    if (this.getAttribute('href') === '#contact-form') {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: document.getElementById('contact-form').offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+        });
+        
+        // Add current year to footer copyright
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElement = document.querySelector('.copyright');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2026', currentYear);
+            }
+        });
+    </script>
+</body>
+</html>
